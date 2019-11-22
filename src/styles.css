@@ -1,1 +1,382 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* HEADER SECTION */
+
+.home-section {
+    position: relative;
+    height: 100vh;
+    z-index: 100;
+}
+
+.icon {
+    display: none;
+}
+
+.mobile-header {
+    display: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    border-radius: 15px;
+    margin: 3%;
+}
+
+.header-container .logo {
+    flex: 0 0 25%;
+    margin: auto;
+    padding: 5px;
+}
+
+.header-container .header-content {
+    flex: 0 0 70%;
+    text-transform: uppercase;
+}
+
+.header-container .header-content .items {
+    display: flex;
+    list-style: none;
+}
+
+.header-container .header-content .items li {
+    margin-left: 20px;
+    margin: 27px auto;
+}
+
+.header-container .header-content .items li a {
+    text-decoration: none;
+    color: #888;
+    font-weight: 400;
+    transition: all 0.8s;
+    padding: 5px;
+}
+
+.header-container .header-content .items li a:hover {
+    border-bottom: 2px solid #0043ffb8;
+    color: #0043ffb8;
+}
+
+
+/* HOME SECTION */
+
+.home-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url('./assets/home.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover
+}
+
+.container {
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+.home-section .container .col-1 {
+    flex: 0 0 35%;
+    margin: auto;
+}
+
+.home-section .container .col-2 {
+    flex: 0 0 50%;
+}
+
+.home-section .container .col-2 img {
+    position: absolute;
+    top: 13%;
+    right: 1px;
+}
+
+.home-section .col-1 .text-container {
+    margin: 35% 5%;
+}
+
+.home-section .col-1 .text-container p {
+    font-size: 85px;
+    color: white;
+    font-weight: 300;
+    line-height: 81px;
+}
+
+.home-section .col-1 .text-container b {
+    font-weight: 400;
+    font-size: 120px;
+}
+
+
+/* SERVICES SECTION */
+
+.services-section {
+    position: relative;
+    height: 100vh;
+    background: white;
+    margin-top: 320px;
+    z-index: 0;
+}
+
+img {
+    max-width: 100%;
+    min-height: auto;
+}
+
+.services-section h2 {
+    text-align: center;
+    color: #0043ffb8;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.services-section .row .col-3 {
+    display: flex;
+    flex-flow: wrap;
+    flex: 0 0 100%;
+    justify-content: flex-end;
+}
+
+.services-section .row .col-3 div {
+    flex: 0 0 30%;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.services-section .row .col-3 div p {
+    font-size: 22px;
+    max-width: 58%;
+    margin: 19px auto;
+}
+
+.services-section .service-btn {
+    color: #0043ffb8;
+    max-width: 15%;
+    margin: auto;
+    border: 2px solid;
+    padding: 15px;
+    border-radius: 33px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.services-section .btn-box {
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+
+/* TRENDS SECTION */
+
+.trends-section {
+    background: url('./assets/trends-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+
+.trends-section .row .col-4 {
+    flex: 0 0 20%;
+    margin: 20% auto;
+}
+
+.trends-section .row .col-4 p {
+    margin-top: 100px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 33px;
+}
+
+
+/* CONTACT SECTION */
+
+.contact-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-image: url('./assets/contactbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.contact-section .col-5 {
+    flex: 0 0 35%;
+    margin: 15% auto;
+}
+
+.contact-section .col-6 {
+    flex: 0 0 30%;
+    text-align: center;
+    margin: 15% auto;
+    background: white;
+    color: #888;
+}
+
+.contact-section .text-container {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 45px;
+    color: white;
+}
+
+.contact-section .form-container {
+    margin: 5% auto;
+}
+
+.contact-section .form-container h1 {
+    margin: 5% auto;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.fas {
+    font-size: 35px;
+    color: #0043ffb8;
+}
+
+.fa-times {
+    font-size: 35px;
+    color: #0043ffb8;
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .icon {
+        display: block;
+        display: block;
+        position: absolute;
+        top: 14px;
+        right: 25px;
+    }
+    .desktop-container {
+        display: none;
+    }
+    .mobile-header {
+        position: relative;
+        background: white;
+        height: 70px;
+        display: block
+    }
+    .logo-img {
+        margin: 6px;
+    }
+    .mobile-header .mobile-header-content {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        list-style: none;
+        text-decoration: none;
+        z-index: 10000;
+        width: 67%;
+        display: none;
+        overflow: auto;
+        background-color: rgb(255, 255, 255);
+        -webkit-animation-name: fadeIn;
+        -webkit-animation-duration: 0.4s;
+        animation-name: fadeIn;
+        animation-duration: 0.4s
+    }
+    .show {
+        display: block !important;
+        width: 67%;
+        animation-name: fadeIn;
+        animation-duration: 0.4s
+    }
+    .hide-btn {
+        display: none;
+    }
+    .show-btn {
+        display: block;
+    }
+    .mobile-header .items li {
+        margin: 20px;
+        list-style: none;
+    }
+    .mobile-header .items li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #0043ffb8;
+    }
+    .row {
+        flex-flow: column;
+    }
+    .home-section .col-1 .text-container {
+        margin: 0;
+    }
+    .home-section .col-1 .text-container b {
+        font-size: 80px;
+    }
+    .home-section .col-1 .text-container p {
+        font-size: 55px;
+        line-height: 81px;
+        margin-top: 60%;
+    }
+    .home-section .container .col-2 img {
+        top: 11%;
+        right: 0;
+    }
+    .services-section {
+        margin-top: 130px;
+    }
+    .services-section .row .col-3 {
+        flex-flow: column;
+    }
+    .services-section .row .col-3 div {
+        margin: 10px auto;
+    }
+    .services-section .row .col-3 div p {
+        font-size: 16px;
+        max-width: 70%;
+        margin: 19px auto;
+    }
+    .services-section .service-btn {
+        max-width: 50%;
+        padding: 10px;
+        border-radius: 18px;
+        font-size: 17px;
+    }
+    .trends-section {
+        margin-top: 150px;
+    }
+    .services-section .service-btn {
+        color: #0043ffb8;
+        max-width: 60%;
+        margin: auto;
+        border: 2px solid;
+        padding: 15px;
+        border-radius: 24px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .trends-section .row .col-4 {
+        margin: 0;
+        margin-top: -70px;
+    }
+    .trends-section .row .col-4 .mr-top {
+        margin-top: 700px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .icon {
+        display: block;
+    }
+}

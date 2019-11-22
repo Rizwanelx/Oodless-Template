@@ -1,0 +1,178 @@
+<section class="home-section">
+    <div class="home-background">
+
+        <header>
+            <nav class="desktop-container">
+                <div class="header-container">
+                    <div class="logo">
+                        <img src="../../assets/logo.png" alt="" class="logo-img">
+                    </div>
+                    <div class="header-content">
+                        <ul class="items">
+                            <li class="item"><a href='#'>Home</a></li>
+                            <li class="item">
+                                <a href='#'>Portfolio</a>
+                            </li>
+                            <li class="item">
+                                <a href='#'>Technologies</a>
+                            </li>
+                            <li class="item">
+                                <a href='trend'>Marketing Insight</a>
+                            </li>
+                            <li class="item">
+                                <a href='#'>Services</a>
+                            </li>
+                            <li class="item">
+                                <a href='#'>About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav class="mobile-header">
+                <div class="icon" (click)='isFavirote =!isFavirote'>
+                    <i class="fas fa-bars" [ngClass]="{'hide-btn':isFavirote}"></i>
+                    <i class="fas fa-times" [ngClass]="{'show-btn':isFavirote}"></i>
+                </div>
+                <div class="mobile-container">
+                    <div class="mobile-logo">
+                        <img src="../../assets/logo.png" alt="" class="logo-img">
+                    </div>
+                    <div class="mobile-header-content" [ngClass]="{'show':isFavirote}">
+                        <ul class="items">
+                            <li class="item"><a href='#'>Home</a></li>
+                            <li class="item">
+                                <a href='#'>Portfolio</a>
+                            </li>
+                            <li class="item">
+                                <a href='#'>Technologies</a>
+                            </li>
+                            <li class="item">
+                                <a href='#'>Marketing Insight</a>
+                            </li>
+                            <li class="item">
+                                <a href='#'>Services</a>
+                            </li>
+                            <li class="item">
+                                <a href='#'>About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <div class="text-container">
+                        <p>LOREM <br><b>IPSUM</b></p>
+                    </div>
+                    <div class="image-container">
+                        <img src="../../assets/bitcoin2.png" alt="" class="bitcoin-1">
+                        <img src="../../assets/bitcoin1.png" alt="" class="bitcoin-2">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img src="../../assets/bitcoin_3d_logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="services-section">
+    <div class="container">
+        <h2>OUR SERVICES</h2>
+        <div class="row">
+            <div class="col-3">
+                <div>
+                    <img src="../../assets/icon1.png" alt="">
+                    <p>SMART CONTRACTS DEVLOPEMENT</p>
+                </div>
+                <div>
+                    <img src="../../assets/icon2.png" alt="">
+                    <p>EXCHANGE</p>
+                </div>
+                <div>
+                    <img src="../../assets/icon3.png" alt="">
+                    <p>BLOCKCHAIN DEVLOPEMENT</p>
+                </div>
+                <div>
+                    <img src="../../assets/icon4.png" alt="">
+                    <p>HYPERLEDGER CONTACTS</p>
+                </div>
+                <div>
+                    <img src="../../assets/icon5.png" alt="">
+                    <p>PRIVATE BLOCKCHAIN DEVLOPEMENT</p>
+                </div>
+                <div>
+                    <img src="../../assets/icon6.png" alt="">
+                    <p>WALLET</p>
+                </div>
+            </div>
+        </div>
+        <div class="btn-box">
+            <p class='service-btn'>View All Services</p>
+        </div>
+    </div>
+</section>
+<section class="trends-section" id="trend">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <p class="mr-top">How Blockchain Technology Will Fortify Real Estate Industry </p>
+                <img src="../../assets/businessman-business-sketch.png" alt="" class="slider-1">
+            </div>
+            <div class="col-4">
+                <p> Blockchain Technology Can Help Fight Cyber Crimes </p>
+                <img src="../../assets/cybercrime2.png" alt="" class="slider-2">
+            </div>
+            <div class="col-4">
+                <p>Blockchain Technology Contributing To Research & Development </p>
+                <img src="../../assets/Real-Estate-Investment-Dropping.png" alt="" class="slider-3">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-section">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <div class="text-container">
+                    <p>New to the Blockchain industry ?</p>
+                    <p>Or got any queries?</p>
+                    <p>We are just one click away!</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-container">
+                    <h1>Contact Us</h1>
+                    <p>How can we help you ?</p>
+                    <form [formGroup]="contactForm">
+                        <div>
+                            <input id="name" type="text" formControlName="name" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <input id="email" type="email" formControlName="email" placeholder="Your email address">
+                        </div>
+                        <div>
+                            <input id="name" type="text" formControlName="name" placeholder="Company">
+                        </div>
+                        <div>
+                            <input id="name" type="text" formControlName="name" placeholder="Your Subject">
+                        </div>
+                        <div>
+                            <input id="name" type="text" formControlName="name" placeholder="Your Message...">
+                        </div>
+                        <button class="button" type="submit">Purchase</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
